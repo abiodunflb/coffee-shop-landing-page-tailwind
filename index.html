@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- header -->
+    <div class="px-8 py-4 flex justify-between items-center sticky top-0 bg-white">
+        <!-- logo -->
+        <div>
+            <h1 class="font-bold text-2xl shadow-xl rounded-full md:p-3 p-1 bg-yellow-400 text-white">COFFEE SHOP</h1>
+        </div>
+        <!-- logo-end  -->
+
+        <!-- menu  -->
+        <div class="flex space-x-8 hidden md:flex font-semibold text-gray-600 text-center">
+            <a class="hover:text-gray-900 font-bold" href="#">Landing</a>
+            <a class=hover:text-gray-900 href="#">Home</a>
+            <a class=hover:text-gray-900 href="#">Menu</a>
+            <a class=hover:text-gray-900 href="#">Guide</a>
+            <a class=hover:text-gray-900 href="#">Shop</a>
+            <a class=hover:text-gray-900 href="#">Blog</a>
+            <a class=hover:text-gray-900 href="#">About</a>
+            <a class=hover:text-gray-900 href="#">Contact</a>
+            <a class=hover:text-gray-900 href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </a>
+        </div>
+        <!-- menu-end -->
+
+        <!-- mobile-menu-button -->
+
+        <div class="md:hidden" id="mobile-menu-button">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- mobile-menu-button-end  -->
+    </div>
+    <!-- header-end  -->
+
+    <!-- mobile-menu -->
+
+    <div class="flex flex-col items-center space-y-3 md:hidden hidden mb-3" id="mobile-menu">
+        <a class="block" href="#">Landing</a>
+        <a class="block" href="#">Home</a>
+        <a class="block" href="#">Menu</a>
+        <a class="block" href="#">Guide</a>
+        <a class="block" href="#">Shop</a>
+        <a class="block" href="#">Blog</a>
+        <a class="block" href="#">About</a>
+        <a class="block" href="#">Contact</a>
+        <a class="block" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+        </a>
+    </div>
+
+    <!-- mobile-menu-end -->
+
+    <!-- hero -->
+    <div class="hero w-screen md:h-96 h-screen flex justify-center items-center md:p-80 text-white">
+        <div class="p-10 text-center md:space-y-8 space-y-4">
+            <h1 class="font-bold md:text-7xl text-4xl">COFFEE HOUSE</h1>
+            <p class="font-semibold text-lg">Serving Only The Best Since 2013</p>
+            <div class="mt-5">
+                <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-500 rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">Shop</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- hero-end  -->
+
+    <!-- tea-menu  -->
+
+    <div class="tea-menu w-screen h-100 p-10 md:p-36 text-gray-500">
+        <div class="md:px-60 space-y-8 mb-10 text-center">
+            <h2 class="md:text-4xl text-xl font-bold text-black">WE BELIEVE IN COFFEE THAT TASTES INCREDIBLE</h2>
+            <p class="md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+        </div>
+
+        <div class="md:flex justify-center md:space-y-0 space-y-10 text-center">
+            <div>
+                <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coffee-item-2.png" alt="image">
+                <div class="md:pr-32">
+                    <h3 class="font-bold text-black">MOCHA LATTE</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+
+            </div>
+            <div>
+                <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coffee-item-1.png" alt="image">
+                <div class="md:pr-32">
+                    <h3 class="font-bold text-black">MOCHA LATTE</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/coffee-item-3.png" alt="image">
+                <div class="md:pr-32">
+                    <h3 class="font-bold text-black">MOCHA LATTE</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 md:flex justify-center md:mr-20 mr-5">
+            <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out mx-16" href="#">FULL MENU</a>
+        </div>
+    </div>
+
+    <!-- tea-menu-end  -->
+
+    <!-- fresh beans -->
+    <div class="md:flex">
+        <!-- left -->
+        <div class="md:w-1/2 md:py-20 md:px-32 p-5 space-y-10 text-gray-500">
+            <h2 class="font-bold md:text-5xl text-3xl text-gray-700">FRESH BEANS</h2>
+            <p class="leading-8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <div class="mt-10">
+                <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">LEARN MORE</a>
+            </div>
+
+        </div>
+        <!-- left-end  -->
+
+
+        <!-- right -->
+        <div class="md:w-1/2">
+            <img class="h-100" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/section-bg-9.jpg" alt="">
+        </div>
+        <!-- right-end  -->
+    </div>
+
+    <!-- fresh-beans-end  -->
+
+
+    <!-- great coffee  -->
+
+    <div class="great-coffee w-screen h-100 p-10 md:p-36 flex text-white">
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 space-y-10">
+            <h2 class="font-bold md:text-5xl text-3xl">GREAT COFFEE</h2>
+            <p class="leading-8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <div class="mt-10">
+                <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- great-coffee-end  -->
+
+    <!-- best coffee shop  -->
+
+    <div class="best-coffee-shop w-screen h-100 text-gray-500">
+        <div class="flex space-y-10 flex-col justify-center text-center p-10 md:py-32  md:w-4/5">
+
+
+            <div>
+                <h2 class="text-white text-3xl font-bold">THE BEST COFFEE SHOP</h2>
+            </div>
+
+            <div class="flex md:flex-row flex-col justify-center space-y-6 md:space-y-0 md:space-x-40">
+                <div>
+                    <img class="inline-block" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/icon-1.png" alt="">
+                    <p class="md:mt-5 text-yellow-200 font-semibold">BEST BEANS</p>
+                </div>
+                <div>
+                    <img class="inline-block" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/icon-2.png" alt="">
+                    <p class="md:mt-5 text-yellow-200 font-semibold">QUALITY MILK</p>
+                </div>
+                <div>
+                    <img class="inline-block" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/icon-3.png" alt="">
+                    <p class="md:mt-5 text-yellow-200 font-semibold">PERFECT BLEND</p>
+                </div>
+            </div>
+
+            <div class="md:w-7/12 m-auto">
+                <p class="text-white font-bold leading-8 text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
+                <div class="mt-10">
+                    <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- best coffee shop end  -->
+
+    <!-- more-coffees  -->
+
+    <div class="md:flex">
+        <div>
+            <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/gallery-coffee-image-1.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/gallery-coffee-image-2-1.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/gallery-coffee-image-5.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- more-coffees-end  -->
+
+    <!-- blog  -->
+    <div class="md:p-32 bg-gray-100 space-y-10 p-5">
+        <div class="text-center">
+            <h2 class="text-black font-bold text-lg md:text-3xl">LATEST FROM OUR BLOG</h2>
+            <p class="md:w-6/12 md:m-auto leading-8">Quisque vulputate massa nec feugiat fringilla. Fusce at euismod augue. Maecenas quis leo id lectus vestibulum interdum.</p>
+        </div>
+
+
+        <div class="md:flex justify-around md:w-4/5 md:space-x-16 md:m-auto md:space-y-0 space-y-5">
+
+            <div class="md:w-1/3 md:space-y-0 space-y-5 text-center md:text-left bg-white">
+                <img src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/bakery-16-400x250.jpg" alt="">
+                <div class="space-y-5 md:space-y-3 p-3">
+                    <p class="font-bold">NUNC VOLUTPAT VENENATIS</p>
+                    <p class="text-gray-500">May 9, 2014 | Category | 4 Comments</p>
+                    <p class="text-gray-500">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus
+                        fringilla semper. Aenean nunc ex,...</p>
+                </div>
+
+            </div>
+
+            <div class="md:w-1/3 md:space-y-0 space-y-5 text-center md:text-left bg-white">
+                <img class="space-y-5" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/01/generator-68-400x250.jpg" alt="">
+                <div class="space-y-5 md:space-y-3 p-3">
+                    <p class="font-bold">NUNC VOLUTPAT VENENATIS</p>
+                    <p class="text-gray-500">May 9, 2014 | Category | 4 Comments</p>
+                    <p class="text-gray-500">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus
+                        fringilla semper. Aenean nunc ex,...</p>
+                </div>
+
+            </div>
+
+            <div class="md:w-1/3 md:space-y-0 space-y-5 text-center md:text-left bg-white">
+                <img class="space-y-5" src="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/florist-04-400x250.jpg" alt="">
+                <div class="space-y-5 md:space-y-3 p-3">
+                    <p class="font-bold">NUNC VOLUTPAT VENENATIS</p>
+                    <p class="text-gray-500">May 9, 2014 | Category | 4 Comments</p>
+                    <p class="text-gray-500">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus
+                        fringilla semper. Aenean nunc ex,...</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a class="md:py-4 md:px-6 px-2 py-1 text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">READ MORE</a>
+        </div>
+    </div>
+    <!-- blog-end -->
+
+    <!-- footer  -->
+    <div class="c-footer w-screen h-100 text-white md:flex">
+        <!-- left  -->
+        <div class="md:py-28 p-5 md:text-left text-center md:px-32 space-y-7 md:w-1/2">
+            <div class="font-bold text-3xl">COME ON IN!</div>
+
+            <div class="space-y-3">
+                <p class="text-yellow-400">WEEKDAYS</p>
+                <p>08PM-12AM</p>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-yellow-400">WEEKDAYS</p>
+                <p>08PM-12AM</p>
+            </div>
+
+            <div class="mt-10">
+                <a class="md:py-4 md:px-6 px-2 py-1 md:text-lg font-bold bg-yellow-400 text-white rounded hover:bg-yellow-600 transition duration-500 ease-in-out" href="#">VIEW THE MENU</a>
+            </div>
+        </div>
+
+        <!-- right  -->
+        <div class="md:py-28 p-7 md:text-left bg-black text-center md:px-32 space-y-7 md:w-1/2">
+            <div class="font-bold text-3xl">CONTACT</div>
+
+            <div class="space-y-3">
+                <p class="text-yellow-400">PHONE</p>
+                <p>+(000) 111 222 333</p>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-yellow-400">MAIL</p>
+                <p>address@domain.com</p>
+            </div>
+
+            <div class="space-y-3">
+                <p class="text-yellow-400">ADDRESS</p>
+                <p>543 TN, doula street NY, New York</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer-end  -->
+
+    <!-- copyright  -->
+    <div class="p-5 md:px-0 copyright md:text-left text-center space-y-5 md:space-y-0 md:flex justify-around items-center">
+        <!-- left  -->
+        <div class="text-sm">
+            Redesigned By <span class="font-bold">Afolabi Abiodun</span> | Original - <a href="https://www.elegantthemes.com/layouts/business/coffee-shop-landing-page/live-demo" class="font-bold">Elegant Themes</a>
+        </div>
+
+        <!-- right  -->
+        <div class="md:text-2xl md:space-x-8">
+            <i class="transition-all cursor-pointer hover:text-yellow-400 lni lni-facebook-filled"></i>
+            <i class="transition-all cursor-pointer hover:text-yellow-400 lni lni-twitter-filled"></i>
+            <i class="transition-all cursor-pointer hover:text-yellow-400 lni lni-instagram-filled"></i>
+            <i class="transition-all cursor-pointer hover:text-yellow-400 lni lni-youtube"></i>
+        </div>
+    </div>
+
+
+    <!-- copyright-end  -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
